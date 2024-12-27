@@ -1,10 +1,10 @@
 import React from "react";
 import Cards_details from "../Json/Cards_details";
 
-function Batch_Cards() {
+function Batch_completed() {
   return (
     <>
-      {Cards_details.map((items, i) => {
+      {Cards_details.map((items,i) => {
         return (
           
             <div key={i} className="w-[25rem] h-[19rem] bg-white rounded-3xl border border-t-8 border-[#012951] shadow-2xl">
@@ -46,4 +46,4 @@ function Batch_Cards() {
   );
 }
 
-export default Batch_Cards;
+export default Batch_completed;

@@ -74,3 +74,5 @@ const cards = [{
     topics:"23",
     Fees:"₹10000"
 },]
+
+export default cards;

@@ -9,13 +9,13 @@ function Sidebar() {
   const { count, setCount } = useContext(Counter);
   // console.log(count)
   return (
-    <section className=" fixed top-[4.5rem] left-5 overflow-hidden cursor-pointer">
-      <div className="h-[85vh] w-[15rem] bg-red-100">
+    <section>
+      <div className="h-[85vh] w-[15rem] bg-white fixed top-[4.5rem] left-5 overflow-hidden cursor-pointer">
         <div className="text-center pt-4 font-semibold">
-          <Link to="/module">
+          <Link to="/">
            <h2
             className={`${text_effects} ${count === 1 ? not_active : ""}`}
-            onClick={() => setCount(2)}
+            onClick={() => setCount(1)}
           >
             Module
           </h2>
@@ -28,22 +28,22 @@ function Sidebar() {
             Batch
           </h2>
           </Link>
-          <Link to="/test module">
+          {/* <Link to="/test module"> */}
           <h2
             className={`${text_effects} ${count === 3 ? not_active : ""}`}
             onClick={() => setCount(3)}
           >
             Test Module
           </h2>
-          </Link>
-          <Link to="/resources">
+          {/* </Link> */}
+          {/* <Link to="/resources"> */}
           <h2
             className={`${text_effects} ${count === 4 ? not_active : ""}`}
             onClick={() => setCount(4)}
           >
             Resources
           </h2>
-          </Link>
+          {/* </Link> */}
         </div>
       </div>
     </section>
