@@ -10,7 +10,7 @@ function Sidebar() {
   // console.log(count)
   return (
     <section>
-      <div className="h-[85vh] w-[15rem] bg-white fixed top-[4.5rem] left-5 overflow-hidden cursor-pointer">
+      <div className="h-[85vh] w-[15rem] shadow-2xl bg-white fixed top-[4.5rem] left-5 overflow-hidden cursor-pointer">
         <div className="text-center pt-4 font-semibold">
           <Link to="/">
            <h2
@@ -28,22 +28,22 @@ function Sidebar() {
             Batch
           </h2>
           </Link>
-          {/* <Link to="/test module"> */}
+          <Link to="/test_module">
           <h2
             className={`${text_effects} ${count === 3 ? not_active : ""}`}
             onClick={() => setCount(3)}
           >
             Test Module
           </h2>
-          {/* </Link> */}
-          {/* <Link to="/resources"> */}
+          </Link>
+          <Link to="/resources">
           <h2
             className={`${text_effects} ${count === 4 ? not_active : ""}`}
             onClick={() => setCount(4)}
           >
             Resources
           </h2>
-          {/* </Link> */}
+          </Link>
         </div>
       </div>
     </section>

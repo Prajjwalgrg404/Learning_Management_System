@@ -7,7 +7,7 @@ function Batch_completed() {
       {Cards_details.map((items,i) => {
         return (
           
-            <div key={i} className="w-[25rem] h-[19rem] bg-white rounded-3xl border border-t-8 border-[#012951] shadow-2xl">
+            <div key={i} className="w-[25rem] h-[19rem] bg-white rounded-3xl border border-t-8 border-[#012951] shadow-xl">
               <div className="flex justify-between px-6 mt-6">
                 <h3 className="text-blue-900 font-semibold">
                   {items.Starting}

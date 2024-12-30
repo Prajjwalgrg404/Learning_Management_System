@@ -5,11 +5,24 @@ function Module() {
   const Cards_inside =
     "w-[6rem] h-[4rem] rounded-xl border border-b-4 border-green-800 shadow-2xl text-center";
   return (
-    
-      <div className="w-full h-full flex flex-wrap gap-5 items-center py-5">
-        {cards.map((items) => {
+    <>
+      <div className="py-2">
+        <div className=" border rounded-full mt-8 w-[17rem] bg-white ml-6 shadow-lg">
+          <i className="fa-solid fa-magnifying-glass pl-3"></i>
+          <input
+            className="px-2 py-2 outline-none border-none rounded-full"
+            type="text"
+            placeholder="Search Here..."
+          />
+        </div>
+      </div>
+      <div className="w-full h-[80vh] flex flex-wrap gap-5 py-4 overflow-y-scroll items-center">
+        {cards.map((items, i) => {
           return (
-            <div className="w-[23rem] h-[11rem] rounded-xl border-b-8 border-purple-900 bg-white drop-shadow-2xl ml-5">
+            <div
+              key={i}
+              className="w-[23rem] h-[11rem] rounded-xl border-b-8 border-purple-900 bg-white shadow-xl ml-5"
+            >
               <div className="flex px-8 py-4 justify-between">
                 <h2 className="text-[1.3rem] font-semibold text-purple-900">
                   {items.course}
@@ -34,7 +47,7 @@ function Module() {
           );
         })}
       </div>
-  
+    </>
   );
 }
 

@@ -6,7 +6,7 @@ import Main_div from './Component/Main_div'
 
 function App() {
   return (
-    <div className='bg-[#F7F6F4] h-[100vh] w-full'>
+    <div className='bg-[#F7F6F4] h-screen w-full overflow-hidden'>
       <Header/>
       <Sidebar/>
       <Main_div/>
