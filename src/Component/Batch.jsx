@@ -12,7 +12,7 @@ function Batch() {
     "px-6 py-2 rounded-lg border border-[#012951] text-[#012951] bg-[#012951] text-white ml-6 ";
 
   const { change, setchange } = useContext(Counter);
-  // console.log(change);
+   
 
   return (
     <>

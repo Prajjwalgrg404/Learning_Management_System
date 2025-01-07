@@ -27,11 +27,11 @@ function Header() {
                   Hi, Prajjwal <i className="fa-solid fa-chevron-down"></i>
                 </p>
                 <div
-                  className={`w-[26rem] h-[22rem] bg-white z-20 absolute right-4 ${
+                  className={`w-[26rem] h-[22rem] bg-white z-20 absolute right-5 ${
                     !open ? "top-[-30rem]" : "top-[3.5rem]"
                   } rounded-lg px-4 py-8`}
                 >
-                  <div className=" bg-[#101855] text-white rounded-full absolute top-[-0.5rem] left-[10rem] w-[0.5rem] h-[0.5rem] p-7 flex items-center justify-center text-[2.5rem] font-semibold">
+                  <div className=" bg-[#101855] text-white rounded-full absolute top-[-0.5rem] left-[11rem] w-[0.5rem] h-[0.5rem] p-7 flex items-center justify-center text-[2.5rem] font-semibold">
                     P
                   </div>
                   <div className="w-full h-[9rem] rounded-lg border flex flex-col justify-center items-center">
@@ -44,31 +44,31 @@ function Header() {
                   <div className="py-2">
                     <div className="flex justify-between border rounded-lg py-2 px-4 mb-2">
                       <div className="flex items-center">
-                        <i class="fa-regular fa-comment text-green-400"></i>
+                        <i className="fa-regular fa-comment text-green-400"></i>
                         <h3 className="pl-3">Chat Support</h3>
                       </div>
                       <div>
-                      <i class="fa-solid fa-chevron-right"></i>
+                      <i className="fa-solid fa-chevron-right"></i>
                       </div>
                     </div>
 
                     <div className="flex justify-between border rounded-lg py-2 px-4 mb-2">
                       <div className="flex items-center">
-                      <i class="fa-solid fa-info"></i>
+                      <i className="fa-solid fa-info"></i>
                         <h3 className="pl-3">Help Desk</h3>
                       </div>
                       <div>
-                      <i class="fa-solid fa-chevron-right"></i>
+                      <i className="fa-solid fa-chevron-right"></i>
                       </div>
                     </div>
 
                    <div className="flex justify-between  border rounded-lg py-2 px-4 mb-2">
                       <div className="flex items-center">
-                      <i class="fa-solid fa-right-from-bracket"></i>
+                      <i className="fa-solid fa-right-from-bracket"></i>
                         <h3 className="pl-3">Logout</h3>
                       </div>
                       <div>
-                      <i class="fa-solid fa-chevron-right"></i>
+                      <i className="fa-solid fa-chevron-right"></i>
                       </div>
                     </div>
                   </div>
