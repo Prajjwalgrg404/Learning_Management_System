@@ -43,7 +43,6 @@ function Module() {
           <input
             onInput={getVal}
             value={input}
-            // onChange={(e) => setinput(e.target.value)}
             className="px-2 py-2 outline-none border-none rounded-full"
             type="text"
             placeholder="Search Here..."
@@ -52,7 +51,7 @@ function Module() {
         </div>
       </div>
       <div className="w-full h-[80vh] flex flex-wrap gap-5 py-4 overflow-y-scroll items-center">
-        {card.length> 0? (card.map((items, i) => {
+        {card.length > 0? (card.map((items, i) => {
           // console.log(items);
           return (
             <div

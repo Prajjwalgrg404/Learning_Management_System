@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Batch_Cards from "./Batch_Cards";
 import Batch_completed from "./Batch_completed";
 import { Counter } from "../Contextapi/Context";
@@ -12,7 +12,6 @@ function Batch() {
     "px-6 py-2 rounded-lg border border-[#012951] text-[#012951] bg-[#012951] text-white ml-6 ";
 
   const { change, setchange } = useContext(Counter);
-   
 
   return (
     <>
@@ -53,7 +52,7 @@ function Batch() {
         </button>
       </div>
 
-      <div className="h-[65vh] cards px-6 py-4 flex items-center gap-4 z5 flex-wrap overflow-y-scroll">
+      <div className="h-[65vh] cards px-6 py-4 flex items-center gap-4 z-5 flex-wrap overflow-y-scroll">
         {change === 0 ? <Batch_Cards /> : ""}
         {change === 1 ? <Batch_upcoming /> : ""}
         {change === 2 ? <Batch_completed /> : ""}
